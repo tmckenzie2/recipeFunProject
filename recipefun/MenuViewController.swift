@@ -29,12 +29,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initializeDogs()
+        initializeRecipes()
         
 
     }
     
-    func initializeDogs() {
+    func initializeRecipes() {
         if let recipes = Recipe.loadFromFile() {
             self.recipeArray = recipes
         }
