@@ -52,6 +52,25 @@ class AddRecipeViewController: UIViewController {
 
     }
     
+    
+    
+    @IBAction func shareTextButton(_ sender: UIButton) {
+        
+        // text to share
+        let text = recipe?.description
+        print (text)
+        
+        // set up activity view controller
+        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
+        
+    }
+    
     func loadImage (imageURL: String){
         let url = URL(string: imageURL)
         DispatchQueue.global().async {

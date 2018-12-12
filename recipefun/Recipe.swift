@@ -30,6 +30,9 @@ class Recipe: Codable{
         self.mealID = mealID
     }
     
+    var description: String {
+        return "\(self.meal) \(self.instructions) \n  image link  \(self.mealThumb) \n youtube link: \(youTubeUrl) "
+    }
     
     static let recipePListURL: URL = {
         // this is called an initialization closure

@@ -139,17 +139,24 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RFX-DF-9OJ">
-                                        <rect key="frame" x="0.0" y="307.5" width="343" height="176.5"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="343" height="153.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sie-EV-DUQ">
-                                        <rect key="frame" x="133" y="497" width="77" height="50"/>
+                                        <rect key="frame" x="133" y="474" width="77" height="30"/>
                                         <state key="normal" title="View Video"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="showVideoSegue" id="RcW-Xu-Van"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSW-Bk-Ft9">
+                                        <rect key="frame" x="126" y="517" width="91" height="30"/>
+                                        <state key="normal" title="Share Recipe"/>
+                                        <connections>
+                                            <action selector="shareTextButton:" destination="mj0-1e-goq" eventType="touchUpInside" id="zFW-8n-B25"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -255,24 +262,31 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mUa-sb-iUO">
-                                        <rect key="frame" x="0.0" y="305.5" width="343" height="179.5"/>
+                                        <rect key="frame" x="0.0" y="305.5" width="343" height="136.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHC-7w-8T5">
-                                        <rect key="frame" x="129.5" y="498" width="84" height="30"/>
+                                        <rect key="frame" x="129.5" y="455" width="84" height="30"/>
                                         <state key="normal" title="Save Recipe"/>
                                         <connections>
                                             <segue destination="GOh-iu-zbe" kind="unwind" identifier="saveRecipe" unwindAction="unwindToRecipeTableVCWithSegue:" id="5Xi-tQ-UTU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6e-Qc-G3v">
-                                        <rect key="frame" x="133" y="541" width="77" height="30"/>
+                                        <rect key="frame" x="133" y="498" width="77" height="30"/>
                                         <state key="normal" title="View Video"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" identifier="showVideoSegue" id="Ul9-zA-i8G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km7-nt-Jai">
+                                        <rect key="frame" x="126" y="541" width="91" height="30"/>
+                                        <state key="normal" title="Share Recipe"/>
+                                        <connections>
+                                            <action selector="shareTextButton:" destination="47T-p5-3Fh" eventType="touchUpInside" id="67U-qv-puL"/>
                                         </connections>
                                     </button>
                                 </subviews>
